@@ -1,0 +1,829 @@
+[
+    {
+        "id": "e9f89874ef65daed",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d77eb3da558cd14a",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "true boite gris",
+        "group": "0b80c327d8f812c9",
+        "order": 2,
+        "width": "6",
+        "height": "2",
+        "passthru": false,
+        "label": "boite gris ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "0d23c21a41ed3af8",
+                "84e4f232a3110eaa",
+                "c781f1c4ee38260e"
+            ]
+        ]
+    },
+    {
+        "id": "3fb5588e47d41cb5",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "true bouchon gris",
+        "group": "e9e04fcb2abbfdbb",
+        "order": 6,
+        "width": "6",
+        "height": "2",
+        "passthru": false,
+        "label": "bouchon gris",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "6a3aa4a650b4060c",
+                "54c6fd841870c2e5",
+                "55e50082ec02e4e7"
+            ]
+        ]
+    },
+    {
+        "id": "65c9aefcfc220d42",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "true boite rouge",
+        "group": "0b80c327d8f812c9",
+        "order": 3,
+        "width": "6",
+        "height": "2",
+        "passthru": false,
+        "label": "boite rouge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "92dd56b7b997ccac",
+                "0d23c21a41ed3af8",
+                "5f54dcd75d9de6fd"
+            ]
+        ]
+    },
+    {
+        "id": "51376ee02f77cb5f",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "true bouchon noir",
+        "group": "e9e04fcb2abbfdbb",
+        "order": 5,
+        "width": "6",
+        "height": "2",
+        "passthru": false,
+        "label": "bouchon noir",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "821fa1a9fb942b14",
+                "a72eabb9f23f87c1",
+                "55e50082ec02e4e7"
+            ]
+        ]
+    },
+    {
+        "id": "1903194ee15a8cbd",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "trure boite noir",
+        "group": "0b80c327d8f812c9",
+        "order": 4,
+        "width": "6",
+        "height": "2",
+        "passthru": false,
+        "label": "boite noir",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "str",
+        "x": 340,
+        "y": 60,
+        "wires": [
+            [
+                "5f54dcd75d9de6fd",
+                "84e4f232a3110eaa",
+                "df64110a855625ad"
+            ]
+        ]
+    },
+    {
+        "id": "92dd56b7b997ccac",
+        "type": "s7 out",
+        "z": "e9f89874ef65daed",
+        "endpoint": "350b048dd73ac4cd",
+        "variable": "node-red-rouge",
+        "name": "ROUGE",
+        "x": 1180,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "821fa1a9fb942b14",
+        "type": "s7 out",
+        "z": "e9f89874ef65daed",
+        "endpoint": "59ef18c9932776f1",
+        "variable": "node-red-bochon-noir",
+        "name": "BOUHON NOUR",
+        "x": 1210,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6a3aa4a650b4060c",
+        "type": "s7 out",
+        "z": "e9f89874ef65daed",
+        "endpoint": "93662e87f09f2c1d",
+        "variable": "node-red-bochon-gris",
+        "name": "BOUCHON GRIS",
+        "x": 1210,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "41e71141658f1dab",
+        "type": "s7 out",
+        "z": "e9f89874ef65daed",
+        "endpoint": "50d2e94556ba7be1",
+        "variable": "node-red-bochon-rouge",
+        "name": "BOCHOUN ROUGe",
+        "x": 1200,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4cf8087ad657eaec",
+        "type": "s7 out",
+        "z": "e9f89874ef65daed",
+        "endpoint": "e2026e094ce14506",
+        "variable": "START",
+        "name": "START",
+        "x": 1240,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d519952a399faec8",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "true bouchon rouge",
+        "group": "e9e04fcb2abbfdbb",
+        "order": 7,
+        "width": "6",
+        "height": "2",
+        "passthru": false,
+        "label": "bouchon rouge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "41e71141658f1dab",
+                "54c6fd841870c2e5",
+                "a72eabb9f23f87c1"
+            ]
+        ]
+    },
+    {
+        "id": "717c91dc9bf903e8",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "start",
+        "group": "ae973755b003c928",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "start",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 730,
+        "y": 680,
+        "wires": [
+            [
+                "4cf8087ad657eaec"
+            ]
+        ]
+    },
+    {
+        "id": "c940dcca495af0fc",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "false start",
+        "group": "f1a9d628f3e635eb",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "label": "fals start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 720,
+        "y": 720,
+        "wires": [
+            [
+                "4cf8087ad657eaec"
+            ]
+        ]
+    },
+    {
+        "id": "5f54dcd75d9de6fd",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "false boite gris",
+        "group": "fc64be0b8dc2e521",
+        "order": 4,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "label": "false boite gris ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 800,
+        "y": 460,
+        "wires": [
+            [
+                "c781f1c4ee38260e"
+            ]
+        ]
+    },
+    {
+        "id": "a72eabb9f23f87c1",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "false bouchon gris",
+        "group": "fc64be0b8dc2e521",
+        "order": 5,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "label": "false bouchon gris",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 810,
+        "y": 580,
+        "wires": [
+            [
+                "6a3aa4a650b4060c"
+            ]
+        ]
+    },
+    {
+        "id": "54c6fd841870c2e5",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "false bouchon noir",
+        "group": "fc64be0b8dc2e521",
+        "order": 2,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "label": "false bouchon noir",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 810,
+        "y": 540,
+        "wires": [
+            [
+                "821fa1a9fb942b14"
+            ]
+        ]
+    },
+    {
+        "id": "0d23c21a41ed3af8",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "false boite noir",
+        "group": "fc64be0b8dc2e521",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "label": " false boite noir",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "flow",
+        "x": 800,
+        "y": 420,
+        "wires": [
+            [
+                "df64110a855625ad"
+            ]
+        ]
+    },
+    {
+        "id": "55e50082ec02e4e7",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "false bouchon rouge",
+        "group": "fc64be0b8dc2e521",
+        "order": 3,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "label": "false bouchon rouge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 820,
+        "y": 620,
+        "wires": [
+            [
+                "41e71141658f1dab"
+            ]
+        ]
+    },
+    {
+        "id": "84e4f232a3110eaa",
+        "type": "ui_button",
+        "z": "e9f89874ef65daed",
+        "name": "false boite rouge",
+        "group": "fc64be0b8dc2e521",
+        "order": 4,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "label": "false boite rouge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 810,
+        "y": 500,
+        "wires": [
+            [
+                "92dd56b7b997ccac"
+            ]
+        ]
+    },
+    {
+        "id": "df64110a855625ad",
+        "type": "s7 out",
+        "z": "e9f89874ef65daed",
+        "endpoint": "0a58c6fe99de6dd2",
+        "variable": "node-red-noir",
+        "name": "noir",
+        "x": 1170,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c781f1c4ee38260e",
+        "type": "s7 out",
+        "z": "e9f89874ef65daed",
+        "endpoint": "7ec8c6179d81a0f3",
+        "variable": "node-red-gris",
+        "name": "GRIS",
+        "x": 1170,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ed91a5de7ff291cc",
+        "type": "ui_slider",
+        "z": "e9f89874ef65daed",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "f4c8eecdf30037b3",
+        "order": 8,
+        "width": "6",
+        "height": "6",
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "global",
+        "min": 0,
+        "max": "5",
+        "step": 1,
+        "x": 710,
+        "y": 800,
+        "wires": [
+            [
+                "c7b20bd8ac9d383a"
+            ]
+        ]
+    },
+    {
+        "id": "c7b20bd8ac9d383a",
+        "type": "s7 out",
+        "z": "e9f89874ef65daed",
+        "endpoint": "0fcd64cc667dff6a",
+        "variable": "curseur",
+        "name": "curseure",
+        "x": 1100,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "347d1286a8d9422c",
+        "type": "ui_template",
+        "z": "e9f89874ef65daed",
+        "group": "ae973755b003c928",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n.nr-dashboard-theme .nr-dashboard-button .md-button {\nbackground-color: #0094ce;\ncolor: white;\nBORDER-RADIUS: 10px;\n}\n    </style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 280,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b80c327d8f812c9",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "2cd8daf445579239",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "e9e04fcb2abbfdbb",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "2cd8daf445579239",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "350b048dd73ac4cd",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapterauto": true,
+        "adapterport": "",
+        "busaddr": "2",
+        "adapteraddr": "0",
+        "cycletime": "1000",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB2,X0.2",
+                "name": "node-red-rouge"
+            }
+        ]
+    },
+    {
+        "id": "59ef18c9932776f1",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapterauto": true,
+        "adapterport": "",
+        "busaddr": "2",
+        "adapteraddr": "0",
+        "cycletime": "1000",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB2,X0.3",
+                "name": "node-red-bochon-noir"
+            }
+        ]
+    },
+    {
+        "id": "93662e87f09f2c1d",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapterauto": true,
+        "adapterport": "",
+        "busaddr": "2",
+        "adapteraddr": "0",
+        "cycletime": "1000",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB2,X0.4",
+                "name": "node-red-bochon-gris"
+            }
+        ]
+    },
+    {
+        "id": "50d2e94556ba7be1",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapterauto": true,
+        "adapterport": "",
+        "busaddr": "2",
+        "adapteraddr": "0",
+        "cycletime": "1000",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB2,X0.5",
+                "name": "node-red-bochon-rouge"
+            }
+        ]
+    },
+    {
+        "id": "e2026e094ce14506",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapterauto": true,
+        "adapterport": "",
+        "busaddr": "2",
+        "adapteraddr": "0",
+        "cycletime": "1000",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB2,X0.6",
+                "name": "START"
+            }
+        ]
+    },
+    {
+        "id": "ae973755b003c928",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "f1a9d628f3e635eb",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fc64be0b8dc2e521",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "3e6da73091e99ff2",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "0a58c6fe99de6dd2",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapterauto": true,
+        "adapterport": "",
+        "busaddr": "2",
+        "adapteraddr": "0",
+        "cycletime": "500",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB2,X0.0",
+                "name": "node-red-noir"
+            }
+        ]
+    },
+    {
+        "id": "7ec8c6179d81a0f3",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapterauto": true,
+        "adapterport": "",
+        "busaddr": "2",
+        "adapteraddr": "0",
+        "cycletime": "1000",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB2,X0.1",
+                "name": "node-red-gris"
+            }
+        ]
+    },
+    {
+        "id": "f4c8eecdf30037b3",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "2cd8daf445579239",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "0fcd64cc667dff6a",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.33",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapterauto": true,
+        "adapterport": "",
+        "busaddr": "2",
+        "adapteraddr": "0",
+        "cycletime": "1000",
+        "timeout": "1500",
+        "verbose": "default",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "DB2,Word2",
+                "name": "curseur"
+            }
+        ]
+    },
+    {
+        "id": "2cd8daf445579239",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "3e6da73091e99ff2",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": true,
+        "hidden": true
+    }
+]
